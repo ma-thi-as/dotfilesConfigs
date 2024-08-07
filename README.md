@@ -26,6 +26,9 @@ Copy the files on "home" dir on respective folder $HOME/your_user/
 
 Copy the files on ".config/" dir on yout respective $HOME/your_user/.config/
 
+
+Or copy any dir u want in her respective folder.
+
 ```bash
   git commit https://github.com/ma-thi-as/dotfilesConfigs.git
   cd dotfilesConfigs
