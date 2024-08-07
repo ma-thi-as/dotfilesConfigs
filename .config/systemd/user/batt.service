@@ -1,0 +1,9 @@
+[Unit]
+Description=Battery notification service
+
+[Service]
+Type=simple
+ExecStart=/home/m/.config/bspwm/scripts/batt_alert.sh
+
+[Install]
+WantedBy=default.target

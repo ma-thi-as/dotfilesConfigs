@@ -1,0 +1,10 @@
+[Unit]
+Description=Plank (Run Once)
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/plank
+
+[Install]
+WantedBy=default.target
+

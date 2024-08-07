@@ -1,0 +1,48 @@
+#! /bin/sh
+
+# Start sxhkd for keybindings
+sxhkd &
+
+# Set wallpaper using feh
+feh --bg-fill /home/m/.wallpaper/wallpaper.jpg &
+
+# Start polybar
+polybar -r &
+
+# Set mouse cursor
+xsetroot -cursor_name left_ptr 
+
+# Set keyboard layout and options
+setxkbmap -layout latam -model pc105 -option caps:swapescape
+
+# Start picom for compositing
+picom --config /home/m/.config/picom/picom.conf &
+
+# Start Plank dock
+/home/m/.config/bspwm/scripts/plank_init.sh &
+#plank &
+
+# Configure bspwm settings
+bspc config pointer_modifier mod1
+bspc monitor -d 󱟜 󱎓  󰌠 󰳵
+bspc config border_width         2
+bspc config window_gap           8
+bspc config top_padding          0
+bspc config split_ratio          0
+bspc config borderless_monocle true
+bspc config single_monocle true
+bspc config gapless_monocle false
+#bspc focused_border_color '#FF8225'  # Set active border color
+#bspc config normal_border_color '#00000000'
+#bspc config inactive_border_color '#00000000'
+#bspc config focus_border_color '#000000'
+
+bspc config focused_border_color '#FF8225'
+# Rules specifically for Plank
+bspc rule -a Plank layer=above manage=on border=off 
+
+# Raise Plank to the top whenever it is added
+bspc subscribe node_add | while read -r _; do
+   xdo raise -N Plank
+done
+
