@@ -16,6 +16,7 @@ Configuration files for bspwm, shkd, kitty, plank, others...
  - [Zsh]()
  - [Powerlevel10k]()
  - [Feh]()
+ - [Nvim]() With Lazy vim
 
 
 ## Installation
