@@ -8,15 +8,15 @@ Configuration files for bspwm, shkd, kitty, plank, others...
 
 ## Dependencies
 
- - [Bspwm]()
- - [Sxhkd]()
- - [Picom]()
- - [Polybar]()
- - [Kitty]()
- - [Zsh]()
- - [Powerlevel10k]()
- - [Feh]()
- - [Nvim]() With Lazy vim
+ - [Bspwm]
+ - [Sxhkd]
+ - [Picom]
+ - [Polybar]
+ - [Kitty]
+ - [Zsh]
+ - [Powerlevel10k]
+ - [Feh]
+ - [Nvim]
 
 
 ## Installation
