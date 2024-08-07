@@ -21,6 +21,8 @@ Configuration files for bspwm, shkd, kitty, plank, others...
 ## Installation
 
 Copy the files on "home" dir on respective folder $HOME/your_user/
+
+
 Copy the files on ".config/" dir on yout respective $HOME/your_user/.config/
 
 ```bash
