@@ -13,6 +13,7 @@ local opts = { noremap = true, silent = true }
 -- Window split
 vim.api.nvim_set_keymap('n', '<Leader>ws', '<C-w>s', opts) -- Split window horizontally
 vim.api.nvim_set_keymap('n', '<Leader>wv', '<C-w>v', opts) -- Split window vertically
+vim.api.nvim_set_keymap('n', '<Leader>w|', '<C-w>|', opts) -- Split window vertically
 
 -- Window navigation
 vim.api.nvim_set_keymap('n', '<Leader>ww', '<C-w>w', opts) -- Move to the next window
@@ -22,8 +23,8 @@ vim.api.nvim_set_keymap('n', '<Leader>wk', '<C-w>k', opts) -- Move to the top wi
 vim.api.nvim_set_keymap('n', '<Leader>wl', '<C-w>l', opts) -- Move to the right window
 
 -- Window resizing
-vim.api.nvim_set_keymap('n', '<Leader>w-', '24<C-w><', opts) -- Decrease width
-vim.api.nvim_set_keymap('n', '<Leader>w+', '24<C-w>>', opts) -- Increase width
+vim.api.nvim_set_keymap('n', '<Leader>w<', '24<C-w><', opts) -- Decrease width
+vim.api.nvim_set_keymap('n', '<Leader>w>', '24<C-w>>', opts) -- Increase width
 vim.api.nvim_set_keymap('n', '<Leader>w+', '24<C-w>+', opts) -- Increase height
 vim.api.nvim_set_keymap('n', '<Leader>w-', '24<C-w>-', opts) -- Decrease height
 
