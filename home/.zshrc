@@ -53,7 +53,8 @@ alias cat='bat -p'
 source ~/powerlevel10k/powerlevel10k.zsh-theme
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
+source /usr/share/zsh/plugins/zsh-sudo/zsh-sudo.zsh
+source /usr/share/zsh/plugins/zsh-shift/zsh-shift.zsh
 
 # Set 'man' colors
 function man() {
@@ -75,7 +76,7 @@ bindkey  "^[[3~"  delete-char
 bindkey '^[^?' backward-kill-word
 
 default-backward-delete-word () {
-  local WORDCHARS="*?_[]~=&;!#$%^(){}<>"
+  local WORDCHARS="*?_[]~&;!#$%^(){}<>"
   zle backward-delete-word
 }
 zle -N default-backward-delete-word

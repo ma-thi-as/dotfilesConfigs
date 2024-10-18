@@ -1,11 +1,11 @@
 function ColorMyPencils()
     color = color or "default"
-    vim.cmd.colorscheme(color)
+    vim.cmd.colorscheme("sorbet")
     vim.api.nvim_set_hl(0,"Normal", {bg="none"})
     vim.api.nvim_set_hl(0,"NormalFloat", {bg="none"})
     vim.cmd [[
-    highlight StatusLine guifg=#ffffff guibg=#000000
-    highlight StatusLineNC guifg=#ffffff guibg=#000000
+	    highlight StatusLine guifg=#151515 guibg=#FF8F00
+	    highlight StatusLineNC guifg=#000000 guibg=#697565
     ]]
 end
 

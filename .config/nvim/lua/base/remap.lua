@@ -35,9 +35,13 @@ vim.api.nvim_set_keymap('n', '<Leader>wo', '<C-w>o', opts) -- Close other window
 -- Window equalize
 vim.api.nvim_set_keymap('n', '<Leader>w=', '<C-w>=', opts) -- Make all windows equal size
 
--- Spectre keymaps Search/Replace
-vim.keymap.set('n', '<leader>S', function() require('spectre').toggle() end, { desc = "Toggle Spectre" })
--- Search current word
-vim.keymap.set('n', '<leader>sw', function() require('spectre').open_visual({select_word=true}) end, { desc = "Search current word" })
--- Search on current file
-vim.keymap.set('n', '<leader>sf', function() require('spectre').open_file_search({select_word=true}) end, { desc = "Search on current file" })
+-- Auto close
+vim.keymap.set('i', '"', '""<left>', { noremap = true })
+vim.keymap.set('i', "'", "''<left>", { noremap = true })
+vim.keymap.set('i', '(', '()<left>', { noremap = true })
+vim.keymap.set('i', '[', '[]<left>', { noremap = true })
+vim.keymap.set('i', '{', '{}<left>', { noremap = true })
+vim.keymap.set('i', '{<CR>', '{<CR>}<ESC>O', { noremap = true })
+vim.keymap.set('i', '{;<CR>', '{<CR>};<ESC>O', { noremap = true })
+
+

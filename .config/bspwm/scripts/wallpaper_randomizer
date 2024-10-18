@@ -1,0 +1,6 @@
+#!/bin/bash
+rndImg=$(ls ~/.wallpaper| shuf | head -n 1)
+rndImgFullPath="/home/m/.wallpaper/$rndImg"
+export DISPLAY=:0
+exec /usr/bin/feh --bg-fill $rndImgFullPath &
+echo "Setting $rndImgFullPath"

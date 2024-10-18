@@ -151,3 +151,5 @@ super + shift + a
 	bspc node -f {next,prev}
 super + shift + p
 	 xfce4-screenshooter -rs /dev/stdout | xclip -selection clipboard -t image/png
+
+

@@ -1,0 +1,12 @@
+[Unit]
+Description=Random wallpaper service
+After=graphical.target
+
+[Service]
+Type=simple
+ExecStart=/home/m/.config/bspwm/scripts/wallpaper_randomizer
+Environment=DISPLAY=:0
+
+[Install]
+WantedBy=default.target
+
