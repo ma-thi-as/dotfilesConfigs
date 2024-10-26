@@ -98,6 +98,11 @@ dotfilesConfigs/
 ![imagen](https://github.com/user-attachments/assets/dd44f074-4848-4d10-93e0-bb4c66f4e318)
 
 
+
+![imagen](https://github.com/user-attachments/assets/b174a364-14e6-4ba7-8340-1e9ef86ec1a2)
+
+
+
 ## ⚠️ Troubleshooting
 
 - If BSPWM doesn't start, check if `~/.xinitrc` contains `exec bspwm`
