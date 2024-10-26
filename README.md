@@ -39,7 +39,8 @@ cd dotfilesConfigs
 
 2. Install required packages (Arch Linux):
 ```bash
-sudo pacman -S bspwm sxhkd picom polybar kitty zsh feh neovim
+sudo pacman -S bspwm sxhkd picom polybar kitty zsh feh neovim, rofi
+sudo apt install bspwm sxhkd picom polybar kitty zsh feh neovim, rofi
 ```
 
 3. Install powerlevel10k:
@@ -88,21 +89,9 @@ dotfilesConfigs/
 
 ## 🎨 Customization
 
-- Wallpapers are stored in `~/Pictures/wallpapers/`
+- Wallpapers are stored in `~/.wallpapers/`
 - Color schemes can be modified in `.config/kitty/kitty.conf`
-- Polybar modules can be configured in `.config/polybar/config`
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch: `git checkout -b feature/YourFeature`
-3. Commit changes: `git commit -am 'Add YourFeature'`
-4. Push to branch: `git push origin feature/YourFeature`
-5. Submit a Pull Request
-
-## 📝 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+- Polybar modules can be configured in `.config/polybar/modules.ini`
 
 ## 📸 Screenshots
 
