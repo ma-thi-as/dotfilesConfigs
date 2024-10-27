@@ -92,7 +92,7 @@ dotfilesConfigs/
 - Wallpapers are stored in `~/.wallpapers/`
 - Color schemes can be modified in `.config/kitty/kitty.conf`
 - Polybar modules can be configured in `.config/polybar/modules.ini`
-
+- Bspwm scripts can be configured in `.config/bspwm/scripts/`
 ## 📸 Screenshots
 
 ![imagen](https://github.com/user-attachments/assets/dd44f074-4848-4d10-93e0-bb4c66f4e318)
